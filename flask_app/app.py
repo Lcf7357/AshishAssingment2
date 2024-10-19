@@ -13,8 +13,8 @@ mongo_uri = os.getenv('MONGODB_URI')
 
 # Connect to MongoDB Atlas
 client = MongoClient(mongo_uri)
-db = client.shop_db
-products_collection = db['products']
+db = client.shops_DB
+products_collection = db['Products']
 
 @app.route('/')
 def home():
