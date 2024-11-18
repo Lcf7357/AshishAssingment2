@@ -35,9 +35,8 @@ jobs:
       run: |
         echo "MONGODB_USERNAME=${MONGODB_USERNAME}" > .env
         echo "MONGODB_PASSWORD=${MONGODB_PASSWORD}" >> .env   
-        
+
     - name: Run tests
       run: |
         python -m unittest discover -s flask_app/tests  # Run your unit tests
  
-has context menu
